@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Albz Match</title>
+  <title>Dev Match</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <% javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
+  <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
   <%= javascript_include_tag 'application' %>
   <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class='container'>
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -20,33 +20,33 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: 'navbar-brand' do %>
-      <i class="fa fa-users"></i>
-      Albz Match
+        <i class="fa fa-users"></i>
+        Dev Match
       <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
       <div class="nav navbar-nav navbar-right">
         <% if current_user %>
-         <%= button_to "Sign Out", destroy_user_session_path, method: :delet, class: 'btn btn primary nav-btn' %>
+          <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
         <% else %>
-          <%= link_to "Log In", new_user_session_path, class:'btn btn-primary navbar-btn', method: :get %>
+          <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
         <% end %>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
-        <li><%= link_to "Contact Us", new_contact_path  %></li>
+        <li><%= link_to "Contact Us", new_contact_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
-
+  
 <div class="container">
   <% flash.each do |key, value| %>
-  <%= content_tag :div, value, class: "alert alert-#{key}" %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
   <% end %>
   
   <%= yield %>
 </div>
-
+  
 </body>
 </html>
