@@ -1,0 +1,56 @@
+/*Style for USERS_HELPER*/
+
+p {
+ color: white;
+ font-size: 1.3em;
+    
+}
+
+.job-title-icon { 
+    text-align: center;
+    color: white;
+    padding: .35em;
+    border: 2px dashed white;
+    background-color: black;
+    border-radius: 120px;
+    text-rendering: auto;
+    text-rendering: optimizeSpeed;
+    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    
+    position: relative;
+    
+}
+
+
+.well.profile-block {
+  color: #fff;
+  h3 {
+    margin-top: 10px;
+  }
+}
+.well.profile-description {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  
+  margin-top: 5%;
+  
+  h4 {
+        color: white;
+        opacity: 0.5;
+    
+    }
+}
+
+.well.contact-info {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  
+  color: white;
+  
+   h4 {
+        color: white;
+        opacity: 0.5;
+    
+    }
+}
