@@ -14,7 +14,7 @@
     </div>
     
     
-    <% if true #current_user.plan_id == 2 %>
+    <% if current_user.plan_id == 2 %>
      <div class="well contact-info">
        <h4>Information:</h4>
         <p> <%= @user.profile.phone_number %> </p>

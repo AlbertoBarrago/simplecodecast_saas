@@ -1,10 +1,6 @@
 /*Style for USERS_HELPER*/
 
-p {
- color: white;
- font-size: 1.3em;
-    
-}
+
 
 .job-title-icon { 
     text-align: center;
@@ -29,9 +25,16 @@ p {
     margin-top: 10px;
   }
 }
+
 .well.profile-description {
   background-color: #5cb85c;
   border-color: #4cae4c;
+  
+  p {
+     color: white;
+     font-size: 1.3em;
+            
+    }
   
   margin-top: 5%;
   
