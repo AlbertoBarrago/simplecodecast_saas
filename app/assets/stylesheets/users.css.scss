@@ -1,6 +1,8 @@
-/*Style for USERS_HELPER*/
-
-
+/* Users show Page Styles*/
+.user-show-avatar {
+ height: 120px;
+ width: 120px;
+}
 
 .job-title-icon { 
     text-align: center;
@@ -56,4 +58,15 @@
         opacity: 0.5;
     
     }
+}
+
+
+.well.white-bg {
+  background-color: white;
+  
+}
+
+/* Users index Page Styles*/
+.user-index-avatar {
+ border-radius: 50%;
 }
